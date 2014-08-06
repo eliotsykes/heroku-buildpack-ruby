@@ -17,6 +17,8 @@ class LanguagePack::NodeInstaller
     puts "LanguagePack::Base::DEFAULT_LEGACY_STACK: #{LanguagePack::Base::DEFAULT_LEGACY_STACK}"
     @legacy   = stack == LanguagePack::Base::DEFAULT_LEGACY_STACK
     puts "@legacy: #{@legacy}"
+    puts "Forcing @legacy to false"
+    @legacy = false
     puts "------------------------------------------"
   end
 
